@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: radial-gradient(circle at 29% 55%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 4%,transparent 4%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 85% 89%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 52%,transparent 52%, transparent 100%),radial-gradient(circle at 6% 90%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 53%,transparent 53%, transparent 64%,transparent 64%, transparent 100%),radial-gradient(circle at 35% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 6%,transparent 6%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 56% 75%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 16%,transparent 16%, transparent 23%,transparent 23%, transparent 100%),radial-gradient(circle at 42% 0%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 3%,transparent 3%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at 29% 28%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 51%,transparent 51%, transparent 75%,transparent 75%, transparent 100%),radial-gradient(circle at 77% 21%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 35%,transparent 35%, transparent 55%,transparent 55%, transparent 100%),radial-gradient(circle at 65% 91%, hsla(329,0%,99%,0.05) 0%, hsla(329,0%,99%,0.05) 46%,transparent 46%, transparent 76%,transparent 76%, transparent 100%),linear-gradient(45deg, rgb(83, 91, 235),rgb(76, 11, 174));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 60vw;
+    
+}
+
+label{
+    font-size: 2rem;
+    padding:5px;
+    color: white;
+}
+
+#url{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    width: 60%;
+}
+#url::placeholder{
+    text-align: center;
+    font-size: 14px;
+}
+button{
+    padding: 10px;
+    width: 30%;
+    border-radius: 50px;
+    border: none;
+    background-color: #108D7D;
+    color: white;
+}
+#result{
+    padding-top: 3rem;
+    display: block;
+    flex-direction: column;
+    color: white;
+}
+p{
+    color: whitesmoke;
+}
+
+/*-------------Media---querie----------------------*/
+
+@media screen and (max-width: 500px) {
+    label{
+        font-size: 1rem;
+    }
+    #url{
+        width: 100%;
+    }
+    button{
+        width: 60%;
+    }
+  }
+
+@media screen and (max-width: 370px) {
+    
+    label{
+        font-size: 1rem;
+    }
+    #url{
+        width: 100%;
+      margin:30px;
+    }
+    button{
+        width: 60%;
+            margin:30px;
+    }
+  }
